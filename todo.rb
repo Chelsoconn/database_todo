@@ -209,9 +209,6 @@ post "/lists/:id/complete_all" do
   redirect "/lists/#{@list_id}"
 end
 
-after do
-  @storage.disconnect
-end
 
 # session = {}
 # session = {lists: []} 

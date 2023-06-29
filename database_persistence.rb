@@ -82,8 +82,9 @@ class DatabasePersistence
       completed: tuple["completed"] == 't'}
     end 
   end 
-
+ 
   def disconnect
     @db.close
   end
+
 end
